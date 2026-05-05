@@ -45,9 +45,3 @@ GOING LIVE (RAILWAY)
 
 ---
 
-A NOTE FROM THE CREATOR
-
-This project was built with a focus on "Design-First" engineering. Every shadow, every font-weight, and every transition was chosen to make the user feel like they are working in a premium environment. We hope you enjoy using it as much as we enjoyed building it.
-
-Live URL: [Insert Link Here]
-Demo Video: [Insert Link Here]
