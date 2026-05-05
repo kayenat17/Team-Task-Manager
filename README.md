@@ -1,36 +1,69 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# TaskFlow | High-Performance Team Workspace
 
-## Getting Started
+Welcome to **TaskFlow**. We believe that managing work shouldn't feel like work. That's why we built a task manager that doesn't just track your progress—it elevates your entire productivity ecosystem with a high-end, "chic" aesthetic.
 
-First, run the development server:
+Inspired by the most sophisticated designs on Dribbble and the clean efficiency of tools like Linear, TaskFlow is a full-stack Next.js application designed for teams who care about craft, speed, and beautiful interfaces.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## ✨ Why TaskFlow?
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Most task managers are boring. We decided to be different.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **Chic "ORDI" Aesthetic:** A warm, high-fashion light-mode design with massive typography and a rotating plush lightning bolt background that brings your workspace to life.
+- **Bento Grid Intelligence:** Your dashboard and projects are organized into an organic "Bento" layout, making information easy to digest and beautiful to look at.
+- **Real-Time Ecosystem Sync:** Stats for "To Do", "In Progress", and "Completed" update across your entire system, giving you a bird's-eye view of your team's output.
+- **Secure & Private:** Built with industry-standard `bcrypt` hashing and `NextAuth.js` to ensure your data stays yours.
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## 🛠️ The Engine Under the Hood
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **Frontend:** Next.js 15+ (App Router), React 19, Vanilla CSS (Pure craft, no Tailwind).
+- **Backend:** Next.js Server Actions & API Routes.
+- **Database:** Prisma ORM with SQLite (Local) / PostgreSQL (Production).
+- **Security:** Bcryptjs for password protection & NextAuth.js for session management.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## 🚀 Getting Started
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+If you're running this locally:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. **Install the dependencies:**
+   ```bash
+   npm install
+   ```
+
+2. **Prepare the Database:**
+   ```bash
+   npx prisma generate
+   ```
+
+3. **Ignite the Engine:**
+   ```bash
+   npm run dev
+   ```
+   Visit `http://localhost:3000` and experience the difference.
+
+---
+
+## 🌐 Going Live (Railway)
+
+TaskFlow is optimized for [Railway.app](https://railway.app). 
+
+1. **Push to GitHub.**
+2. **Deploy on Railway** by selecting your repo.
+3. **Set your variables:**
+   - `NEXTAUTH_SECRET`: (Generate one with `openssl rand -base64 32`)
+   - `NEXTAUTH_URL`: Your live domain.
+   - `DATABASE_URL`: Your database link.
+
+---
+
+## 📝 A Note from the Creator
+
+This project was built with a focus on "Design-First" engineering. Every shadow, every font-weight, and every transition was chosen to make the user feel like they are working in a premium environment. We hope you enjoy using it as much as we enjoyed building it.
+
+**Live URL:** [Insert Link Here]
+**Demo Video:** [Insert Link Here]
