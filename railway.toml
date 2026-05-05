@@ -1,15 +1,15 @@
 [build]
 builder = "nixpacks"
-buildCommand = "npm install && npx prisma generate && npx prisma db push && npm run build"
+buildCommand = "npm install && npx prisma generate && npm run build"
 
 [deploy]
-startCommand = "npm run start"
+startCommand = "npx prisma db push && npm run start"
 restartPolicyType = "on_failure"
 healthcheckPath = "/"
 healthcheckTimeout = 30
 
 [phases.setup]
-nixPkgs = ["nodejs_20", "npm-10_x"]
+nixPkgs = ["nodejs_20"]
 
 [[volumes]]
 mountPath = "/data"
